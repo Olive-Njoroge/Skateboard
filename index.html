@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible">
+    <title>🛹🛹🛹</title>
+    <style>
+        img {
+            height: 240px;
+            width: 240px;
+            display: grid;
+            grid-template-rows: 1fr;
+            padding: 15px 0px 0px 10px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        .image img:hover {
+            transform: scale(1.1);
+        }
+
+        body {
+            background-color: mediumturquoise;
+        }
+
+        .container {
+            max-width: 600px;
+            background-color: white;
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+            transition: all 150ms ease-in-out;
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: aqua;
+            font-size: 14px;
+
+        }
+
+        footer {
+            text-align: center;
+            margin: 10px 0px;
+            font-size: 24px;
+        }
+
+        p {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .first_image {
+            transition: all 200ms ease-in-out;
+        }
+
+        .first_image:hover {
+            transform: scale(1.2);
+            filter: contrast(45%);
+        }
+
+        .theme {
+            background-color: black;
+            color: white;
+        }
+
+        .theme:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+        .dark a {
+            color: cyan;
+        }
+
+        .dark .container {
+            background-color: #1A1A1A;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="theme">Change theme</button>
+    <div class="container">
+        <h1>Skateboarding</h1>
+        <h2>I love Skateboarding🛹🛹</h2>
+        <a href="https://www.google.com/search?sca_esv=0dcbc03f4655a6b5&sca_upv=1&sxsrf=ADLYWILRJtf5r3zcyMs3WlQiR6ylnt0PVA:1721203137926&q=skateboarding+images&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2joZDvir2QxhZkTA8rK1etu4Y3067o-fAl7lygmK690uJyNhakMg---uzr_Yo0p3ZtGQanELZDOaVjFN7yUDe4fgm8aQJKQiASDBoi8CDjwBb6GIRacDnd6jmUt3-NxqSASwMc-y&sa=X&ved=2ahUKEwjNgP2sza2HAxV10wIHHQNmAyQQtKgLegQIFBAB&biw=1536&bih=703&dpr=1.25"
+            target="_blank">
+            <img src="https://i.ibb.co/94sGMw5/deb7f658623bbd41b4892f6b8de50895.jpg" class="first_image"></a>
+        <div class="image">
+            <img src="https://i.ibb.co/VmdnCtd/9a01ae08a72b053222484564729faaea.jpg">
+            <img src="https://i.ibb.co/p2W3py9/323abd9d80165499a2a808f83217e467.jpg">
+            <img src="https://i.ibb.co/bHFfPFd/c6b0794887e04f02027147fc8970e7b5.jpg">
+        </div>
+
+        <p>Skateboarding is an action sport that involves riding and performing tricks using a skateboard, as well as a
+            recreational activity, an art form, an entertainment industry job, and a method of transportation.</p>
+        <p>You can learn more about skateboarding on <a href="https://en.wikipedia.org/wiki/Skateboarding"
+                target="_blank"><strong>wikipedia</strong></a></p><br>
+        <button class="button">Learn Skateboarding</button><br>
+    </div>
+    <footer>Coded by <a href="https://www.linkedin.com/in/olive-njoroge-b89350308/" target="_blank">Olive Njoroge</a>❤️
+    </footer>
+    <script>
+        function changeTheme() {
+            let body = document.querySelector("body");
+            if (body.classList.contains("dark")) {
+                body.classList.remove("dark");
+            } else {
+                body.classList.add("dark");
+            }
+        }
+        let themeButton = document.querySelector(".theme");
+        themeButton.addEventListener("click", changeTheme);
+    </script>
+</body>
+
+</html>
